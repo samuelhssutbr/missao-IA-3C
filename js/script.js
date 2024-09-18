@@ -12,6 +12,19 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
+botãoIniciar.addEventListener('click', iniciaJogo);
+
+function iniciaJogo() {
+    atual = "";
+    historiaFinal= "";
+    telaInicial.style.display = none;
+    caixaPerguntas.classList.remove("mostrar)"
+    caixaAlternativas.classlist.remove("mostrar");
+    caixaResultado.clssList.remove("mostrar");
+    mostraPergunta();
+}
+
+
 function mostraPergunta() {
     if(atual >= perguntas.length){
         mostraResultado();
@@ -54,4 +67,9 @@ function jogarNovamente(){
     mostraPergunta();
 }
     
-mostraPergunta();
+function substituiNome() {
+    for(const pergunta of perguntas) {
+        pergunta.enunciado = pergunta.enunciado.replece(\voce\g, nome);
+    }
+}
+substituiNome();
