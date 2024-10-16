@@ -1,106 +1,32 @@
-const caixaPrincipal = document.querySelector(".caixa-principal");
-const caixaPerguntas = document.querySelector(".caixa-perguntas");
-const caixaAlternativas = document.querySelector(".caixa-alternativas");
-const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultado = document.querySelector(".texto-resultado");
-
-const perguntas = [
-    {
-        enunciado: "Pergunta 1",
-        alternativas: [
-            {
-                texto: "Alternativa 1 da pergunta 1",
-                afirmacao: [
-                    "afirmacao 1",
-                    "afirmacao 2"
-                    ]
-            },
-            {
-                texto: "Alternativa 2 da pergunta 1",
-                afirmacao: [
-                    "afirmacao 1",
-                    "afirmacao 2"
-                    ]
-            }           
-            
-        ]
-    },
-    {
-        enunciado: "Pergunta 2",
-        alternativas: [
-            {
-                texto:"Alternativa 1 da pergunta 2",
-                afirmacao: [
-                    "afirmacao 1",
-                    "afirmacao 2"
-                    ]
-            },
-            {
-                texto: "Alternativa 2 da pergunta 2",
-                afirmacao: [
-                    "afirmacao 1",
-                    "afirmacao 2"
-                    ]
-            }
-        ]
-    },
-    {
-        enunciado: "Pergunta 3",
-        alternativas: [
-            {
-                texto:"Alternativa 1 da pergunta 3",
-                afirmacao: [
-                    "afirmacao 1",
-                    "afirmacao 2"
-                    ]
-            },
-            {
-                texto:"Alternativa 2 da pergunta 3",
-                afirmacao: [
-                    "afirmacao 1",
-                    "afirmacao 2"
-                    ]
-            }
-            
-        ]
-    },
-];
-
-let atual = 0; 
-let perguntaAtual;
-let historiaFinal = "";
-
-function mostraPergunta() {
-    if(atual >= perguntas.length){
-        mostraResultado();
-        return;
-    }
-    perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
-    mostraAlternativas();
-}
-
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas){
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botaoAlternativas);
-    }
-}
-
-function respostaSelecionada(opcaoSelecionada){
-    const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
-    atual++;
-    mostraPergunta();
-}
-
-function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
-    textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = ""; 
-}
-
-mostraPergunta();
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Insetologia</title>
+</head>
+<body>
+    <div class="caixa-principal">
+        <h1>O que você sabe sobre os insetos?</h1>
+        <div class="tela-inicial">
+            <p>Bem-vindo ao Quiz dos Insetos! 
+                Prepare-se para mergulhar no fascinante mundo desses pequenos seres que desempenham papéis essenciais no equilíbrio da natureza. 
+                Você será desafiado a responder perguntas sobre o comportamento, a anatomia e a importância dos insetos no ecossistema. 
+                Teste seus conhecimentos e descubra curiosidades surpreendentes sobre formigas, borboletas, libélulas e muito mais. 
+                Boa sorte e que comece a aventura no mundo dos insetos!
+            </p>
+           <button class="iniciar-btn">Iniciar</button>
+        </div>
+        <div class="caixa-perguntas"></div>
+        <div class="caixa-alternativas"></div>
+        <div class="caixa-resultado">
+            <p class="texto-resultado"></p>
+            <button class="novamente-btn">Jogar Novamente</button>
+        </div>
+    </div>
+    <script type="module" src="js/aleatorio.js"></script>
+    <script type="module" src="js/perguntas.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
