@@ -1,56 +1,57 @@
 export const perguntas = [
     {
-        enunciado: "Você quer descobrir qual é a função principal dos insetos polinizadores no ecossistema?",
+        enunciado: "o quanto voce acha que sabe sobre sonic",
         alternativas: [
             {
-                texto: "Dispersar sementes",
+                texto: "sei muito eu vi todos os filmes e desenhos animados",
                 afirmacao: [
-                    "Na verdade, o papel da dispersão é mais comum em outros animais, como aves e mamíferos."
+                    "lixo só falta jogar mais de 200 jogos e 30 anos de curiosidades e entrevistas."
                 ],
                 proxima: 1,  // Direciona para a pergunta 2
             },
             {
-                texto: "Polinizar plantas",
+                texto: "sei um monte até li o manual japones de sonic 1",
                 afirmacao: [
-                    "A polinização é essencial para a produção de frutos e sementes, mantendo a biodiversidade."
+                    "então voce tambem sofre com a grande quanidade de reatcons né."
                 ],
                 proxima: 1,  // Direciona para a pergunta 2
             },
         ]
     },
     {
-        enunciado: "Agora, você quer descobrir qual dos seguintes insetos é conhecido por formar colônias altamente organizadas?",
-        alternativas: [
+        enunciado: "quais são todas as eras de sonic: [
             {
-                texto: "Formiga",
+                texto: "era classica era adventure era dark e era moderna",
                 afirmacao: [
-                   "As formigas vivem em colônias organizadas com papéis definidos, como operárias, soldados e rainhas.",
+                   "sim e depois de 2022 bem vindo a era do renacimento.",
                 ],
                 proxima: 2,  // Direciona para a pergunta 3
             },
             {
-                texto: "Grilo",
+                texto: "sonic gordo sonic x sonic boom sonic dos filmes",
                 afirmacao: [
-                    "Os grilos são insetos solitários, não vivendo em colônias organizadas como as formigas ou abelhas."
+                    "é pois é voce é muito aleio sobre isso."
                 ],
                 proxima: 2,  // Direciona para a pergunta 3
             },
         ]
     },
     {
-        enunciado: "Você ainda pode querer saber qual inseto passa por metamorfose completa durante seu ciclo de vida?",
+        enunciado: "onde o sonic morra",
         alternativas: [
             {
-                texto: "Borboleta",
+                texto: "green hill zone",
                 afirmacao: [
-                    " As borboletas passam por uma metamorfose completa, incluindo estágios de ovo, lagarta, pupa (crisálida) e adulto.",
+                    " apesar que depois de um reatcon essa se tornou sua terra natal na verdade a green hill zone é apenas uma zona 
+                    da ilha do sul um lugar com varias outras zonas que só aparece no sonic 1 e generations e sonic prime.",
                 ],
                 proxima: 3,  // Direciona para a pergunta 4
             },
             {
-                texto: "Barata",
+                texto: "uma verção alternativa do planeta terra",
                 afirmacao: [
-                    "As baratas passam por metamorfose incompleta, sem o estágio de pupa.",
+                    "sim correto uma verção com com lugares parodiados da vida real como spagonia ou chunan mas que no geral
+                    é um planeta terra onde naturalmente tem loops e ranpas e montanhas naturalmente talhadas com formatos de animais.",
                 ],
                 proxima: 3,  // Direciona para a pergunta 4
             },
