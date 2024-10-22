@@ -10,7 +10,7 @@ export const perguntas = [
                 proxima: 1,  // Direciona para a pergunta 2
             },
             {
-                texto: "sei um monte até li o manual japones de sonic 1",
+                texto: "sei um monte até li o manual japones de sonic 1,2,cd,3 e knnucles",
                 afirmacao: [
                     "então voce tambem sofre com a grande quanidade de reatcons né."
                 ],
