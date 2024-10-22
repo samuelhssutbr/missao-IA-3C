@@ -82,7 +82,7 @@ export const perguntas = [
             {
                 texto: "sonic 2",
                 afirmacao: [
-                    " A tá e super mario word é o melhor jogo do mario tambem né um jogo de mais de 30 anos.",
+                    " A tá e street fighter 2 ainda é o melhor jogo de luta tambem né um jogo de mais de 30 anos.",
                 ]
             },
             {
