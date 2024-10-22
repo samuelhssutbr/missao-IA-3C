@@ -58,37 +58,37 @@ export const perguntas = [
         ]
     },
     {
-        enunciado: "Você também achou interessante perguntar qual inseto é considerado o mais rápido em termos de velocidade de voo?",
+        enunciado: "qual é a musica de sonic de que foi feita pela crush 40 ",
         alternativas: [
             {
-                texto: "Libélula",
+                texto: "open your haert",
                 afirmacao: [
-                    "As libélulas são extremamente rápidas, alcançando até 56 km/h em voo.",
+                    "voce tem bom gosto.",
                 ],
                 proxima: 4,  // Direciona para a pergunta 5
             },
             {
-                texto: "Abelha",
+                texto: "eu sinto o shadow no meu....",
                 afirmacao: [
-                    "As abelhas são rápidas, mas não tanto quanto as libélulas. Elas voam a cerca de 24 km/h quando estão em busca de néctar.",
+                    "pelo amor de deus vai se tratar.",
                 ],
                 proxima: 4,  // Direciona para a pergunta 5
             },
         ]
     },
     {
-        enunciado: "Por fim você quer descobrir qual é o maior inseto em termos de envergadura?",
+        enunciado: "por fim qual é o melhor jogo do sonic",
         alternativas: [
             {
-                texto: "Borboleta imperador",
+                texto: "sonic 2",
                 afirmacao: [
-                    "A borboleta imperador pode ter uma envergadura de até 30 cm, sendo uma das maiores borboletas do mundo.",
+                    " A tá e super mario word é o melhor jogo do mario tambem né um jogo de mais de 30 anos.",
                 ]
             },
             {
-                texto: "Besouro-golias",
+                texto: "bom alguma coisa entre sonic adventure 2 sonic generations sonic unleashed sonic frontiers sonic 3 e knucles",
                 afirmacao: [
-                    "O besouro-golias é um dos maiores insetos em termos de peso, mas não em envergadura."
+                    "é o verdadeiro top 5 de tier s."
                 ]
             },
         ]
